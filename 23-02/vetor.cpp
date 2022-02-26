@@ -4,9 +4,9 @@
 
 using namespace std;
 
-//1. Fazer um programa que leia v·rios n˙meros inteiros e positivos. A leitura se encerra quando encontrar um 
-//n˙mero negativo ou quando o vetor ficar completo. Sabe-se que o vetor possui, no m·ximo, 10 elementos. 
-//Gerar e imprimir um vetor onde cada elemento È o inverso do correspondente do vetor original. 
+//1. Fazer um programa que leia v√°rios n√∫meros inteiros e positivos. A leitura se encerra quando encontrar um 
+//n√∫mero negativo ou quando o vetor ficar completo. Sabe-se que o vetor possui, no m√°ximo, 10 elementos. 
+//Gerar e imprimir um vetor onde cada elemento √© o inverso do correspondente do vetor original. 
 
 /*
 int main() { 
@@ -29,8 +29,8 @@ int main() {
 } 
 */
 
-//2. Fazer um programa que digite v·rios n˙meros no vetor de tamanho m·ximo de 100 elementos, atÈ digitar o n˙mero ì0î. 
-//Imprimir quantos n˙meros iguais ao ˙ltimo n˙mero foram lidos. O limite de n˙meros È 100.  Sem considerar o ì0î como ˙ltimo n˙mero. 
+//2. Fazer um programa que digite v√°rios n√∫meros no vetor de tamanho m√°ximo de 100 elementos, at√© digitar o n√∫mero ‚Äú0‚Äù. 
+//Imprimir quantos n√∫meros iguais ao √∫ltimo n√∫mero foram lidos. O limite de n√∫meros √© 100.  Sem considerar o ‚Äú0‚Äù como √∫ltimo n√∫mero. 
 
 /*
 int main() { 
@@ -58,17 +58,57 @@ int main() {
 } 
 */
 
-//3. Criar um programa para ler 10 n˙meros DIFERENTES a serem armazenados em um vetor. Os dados dever„o ser armazenados no vetor 
-//na ordem que forem sendo lidos, sendo que caso o usu·rio digite um n˙mero que j· foi digitado anteriormente, 
-//o programa dever· pedir para ele digitar outro n˙mero. Note que cada valor digitado pelo usu·rio deve ser pesquisado no vetor, 
-//verificando se ele existe entre os n˙meros que j· foram fornecidos. Exibir na tela o vetor final que foi digitado.  
+//3. Criar um programa para ler 10 n√∫meros DIFERENTES a serem armazenados em um vetor. Os dados dever√£o ser armazenados no vetor 
+//na ordem que forem sendo lidos, sendo que caso o usu√°rio digite um n√∫mero que j√° foi digitado anteriormente, 
+//o programa dever√° pedir para ele digitar outro n√∫mero. Note que cada valor digitado pelo usu√°rio deve ser pesquisado no vetor, 
+//verificando se ele existe entre os n√∫meros que j√° foram fornecidos. Exibir na tela o vetor final que foi digitado.  
 
-//4. Ler um vetor V de 10 elementos e obter um vetor W cujos componentes s„o os fatoriais dos respectivos componentes de V. 
+//4. Ler um vetor V de 10 elementos e obter um vetor W cujos componentes s√£o os fatoriais dos respectivos componentes de V. 
 
 //5. Criar um programa que leia dados de um vetor de 12 elementos inteiros. 
-//Imprima o maior e menor sem ordenar, o percentual de n˙meros pares e a mÈdia dos elementos do vetor. 
+//Imprima o maior e menor sem ordenar, o percentual de n√∫meros pares e a m√©dia dos elementos do vetor.
 
-//6. Criar um vetor com a 8 elementos e orden·-los. 
+/*
+int main(){
+	
+	int vet[12];
+	int maior;
+	int menor;
+	double par = 0;
+	double perc;
+	int media;
+	double media_r;
+	int i;
+	
+	for (i = 0; i <= 11; i++){
+		cout << "Digite o " << (i+1) <<" numero: ";
+		cin >> vet[i];
+		if (vet[i]%2 == 0){
+			par++;
+		}
+		media += vet[i];
+	}
+	
+	menor = vet[0];
+	maior = vet[0];
+	perc = (par*100)/12;
+	media_r = media/11;
+	
+	for (i = 0; i <=11 ; i++){
+		if(vet[i] > maior){
+			maior = vet[i];
+		}
+		if(vet[i] < menor){
+			menor = vet[i];
+		}
+	}
+	
+	cout << "\nResultados:\nMaior: " << maior << "\nMenor: " << menor << "\n% de Numeros pares: " << perc << "%\nMedia: " << media_r;
+}
+
+*/
+
+//6. Criar um vetor com a 8 elementos e orden√°-los. 
 
 /*
 int main() {
@@ -103,8 +143,8 @@ int main() {
 }
 */
 
-//7. Fazer um programa que, dados dois vetores de 7 posiÁıes cada, efetue as operaÁıes aritmÈticas b·sicas, 
-//indicadas por um terceiro vetor cujos dados tambÈm s„o fornecidos pelo usu·rio, gerando e imprimindo um quarto vetor. 
+//7. Fazer um programa que, dados dois vetores de 7 posi√ß√µes cada, efetue as opera√ß√µes aritm√©ticas b√°sicas, 
+//indicadas por um terceiro vetor cujos dados tamb√©m s√£o fornecidos pelo usu√°rio, gerando e imprimindo um quarto vetor. 
 
 /*
 int main() {
@@ -150,6 +190,5 @@ int main() {
 	}
 }
 */
-
 
 
